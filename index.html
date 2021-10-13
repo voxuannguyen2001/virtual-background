@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/selfie_segmentation/selfie_segmentation.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <script type="module" src="script.js"></script>
+
+  <div class="container">
+    <div class="input-img">
+      <input id= "input-text" placeholder="Image URL" type="url"/>
+      <div class="btn-container">
+        <input id="input-btn" value="Start virtual background" type="button"/>
+        <input id="selfie-btn" value="Selfie Mode: Off" type="button" class="red-bg"/>
+      </div>
+    </div>
+    <div class="video-container">
+      <video class="input_video"></video>
+      <canvas width="640" height="450" class="output_canvas"></canvas>
+    </div>
+  </div>
+</body>
+</html>
